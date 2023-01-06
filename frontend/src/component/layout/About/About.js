@@ -5,7 +5,7 @@ import YouTubeIcon from "@material-ui/icons/YouTube";
 import InstagramIcon from "@material-ui/icons/Instagram";
 const About = () => {
   const visitInstagram = () => {
-    window.location = "https://instagram.com/meabhisingh";
+    window.location = "https://instagram.com/official_gadariya01";
   };
   return (
     <div className="aboutSection">
@@ -18,28 +18,31 @@ const About = () => {
           <div>
             <Avatar
               style={{ width: "10vmax", height: "10vmax", margin: "2vmax 0" }}
-              src="https://res.cloudinary.com/tripleayt/image/upload/v1631555947/products/jpyibarlaxawvcvqjv5b.png"
-              alt="Founder"
+              src="https://res.cloudinary.com/djyp8oxvt/image/upload/v1672937591/avatars/hfcomvgyzwbufrwfpabi.png"
+              alt="Creator"
             />
-            <Typography>Abhishek Singh</Typography>
+            <Typography>Rohit Baghel</Typography>
             <Button onClick={visitInstagram} color="primary">
               Visit Instagram
             </Button>
             <span>
-              This is a sample wesbite made by @meabhisingh. Only with the
-              purpose to teach MERN Stack on the channel 6 Pack Programmer
+              This is an Ecommerce website with all the functionality such as
+              customers to browse, select, and purchase products online Some
+              additional functionality are the ability for customers to  leave reviews for products, and filter or sort
+              products by various criteria such as price, category, or brand. In
+              the admin panel,  have tools for managing
+              orders, processing returns or exchanges, and generating reports on
+              sales and customer activity. Having a responsive design that is
+              optimized for both desktop and mobile devices.
             </span>
           </div>
           <div className="aboutSectionContainer2">
             <Typography component="h2">Our Brands</Typography>
-            <a
-              href="https://www.youtube.com/channel/UCO7afj9AUo0zV69pqEYhcjw"
-              target="blank"
-            >
+            <a href="https://www.youtube.com" target="blank">
               <YouTubeIcon className="youtubeSvgIcon" />
             </a>
 
-            <a href="https://instagram.com/meabhisingh" target="blank">
+            <a href="https://instagram.com/official_gadariya01" target="blank">
               <InstagramIcon className="instagramSvgIcon" />
             </a>
           </div>
