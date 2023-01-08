@@ -69,3 +69,4 @@ const store = createStore(
 );
 
 export default store;
+export const serverURL = "https://ecommerce-backend-web.up.railway.app/api/v1";
