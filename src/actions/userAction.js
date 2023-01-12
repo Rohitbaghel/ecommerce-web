@@ -46,10 +46,7 @@ export const login = (email, password) => async (dispatch) => {
 
     const config = {
       headers: {
-        "Content-Type": "application/json",
-        withCredentials: true,
-        "Access-Control-Allow-Credentials": true,
-        "Access-Control-Allow-Origin":'*'
+        withCredentials: true
       },
     };
 
@@ -74,8 +71,6 @@ export const register = (userData) => async (dispatch) => {
       headers: {
         "Content-Type": "multipart/form-data",
         withCredentials: true,
-        "Access-Control-Allow-Credentials": true,
-        "Access-Control-Allow-Origin":'*'
       },
     };
 
