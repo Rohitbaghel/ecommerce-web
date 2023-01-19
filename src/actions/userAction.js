@@ -38,6 +38,7 @@ import {
 } from "../constants/userConstants";
 import axios from "axios";
 import { serverURL } from "../store";
+import Cookies from "js-cookie";
 
 // Login
 export const login = (email, password) => async (dispatch) => {
@@ -46,15 +47,16 @@ export const login = (email, password) => async (dispatch) => {
 
     const config = {
       headers: {
-        withCredentials: true
+        withCredentials: true,
       },
     };
 
-    const { data } = await axios.post(
-      `${serverURL}/login`,
-      { email, password },
-      config
-    );
+    const { data } = await axios
+      .post(`${serverURL}/login`, { email, password }, config)
+      .then((response) => {
+        const token = response.data.token;
+        Cookies.set("token", token);
+      });
 
     dispatch({ type: LOGIN_SUCCESS, payload: data.user });
   } catch (error) {
